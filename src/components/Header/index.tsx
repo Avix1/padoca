@@ -1,4 +1,4 @@
-import { HeaderPage, NavPage, NavLink, LogoPage } from './HeaderStyles';
+import { HeaderPage, NavPage, NavLink, LogoPage } from './styles';
 
 const Header = () => {
     return (

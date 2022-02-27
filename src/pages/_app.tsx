@@ -1,7 +1,7 @@
 import theme from '../styles/theme';
 import { ThemeProvider } from 'styled-components';
-import GlobalStyles from '../styles/GlobalStyles'
-import Header from '../components/Header/Header';
+import GlobalStyles from '../styles/globalStyles'
+import { Layout } from '../components/Layout';
 
 function MyApp({ Component, pageProps }) {
 
@@ -9,10 +9,9 @@ function MyApp({ Component, pageProps }) {
     <>
       <ThemeProvider theme={theme}>
         <GlobalStyles />
-        
-        
+        <Layout>
         <Component {...pageProps} />
-        
+        </Layout>
       </ThemeProvider>
     </>
   )

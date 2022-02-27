@@ -26,6 +26,6 @@ export const NavPage = styled.nav`
 `;
 
 export const NavLink = styled.a`
-    color: white;
+    color: ${props => props.theme.colors.primary};
     font-size: 1rem;
 `
